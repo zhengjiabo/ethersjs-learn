@@ -1,7 +1,14 @@
-// 4. 发送ETH
+// 5. 合约交互
 import { ethers } from "ethers";
 
 const main = async () => {
+    // 可写合约 signer 可以是 wallet 或 provider
+    // const contract = new ethers.Contract(address, abi, signer)
+
+    // 将可读合约转换为可写合约
+    // const contract2 = contract.connect(signer)
+
+
     // 利用infura的rpc节点连接以太坊测试网络
     const SEPOLIA_URL = '';
     const provider = new ethers.JsonRpcProvider(SEPOLIA_URL);

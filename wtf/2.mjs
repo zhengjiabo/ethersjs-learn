@@ -1,7 +1,11 @@
-import { ethers } from "ethers";
+// 2. Provider 提供器
+// 利用 RPC 新建 provider 或者使用 ehters 内置的公共 RPC
+// provider 可以进行链上查询操作
+// provider.getBalance(address) 可以获取指定地址的余额
 
+import { ethers } from "ethers";
 const main = async () => {
-    const PROVATE_RPC = 'https://mainnet.infura.io/v3/bcd1e76b5e094505a53c4a44acdfd627'
+    const PROVATE_RPC = ''
     /* 公共 RPC链接公网 */
     const CHAIN_LIST_RPC = 'https://eth.llamarpc.com'
     const provider = new ethers.JsonRpcProvider(CHAIN_LIST_RPC)

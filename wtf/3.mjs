@@ -1,7 +1,8 @@
+// 3. 读取合约信息
 import { ethers } from "ethers";
 
 const main = async () => {
-    const PROVATE_RPC = 'https://mainnet.infura.io/v3/bcd1e76b5e094505a53c4a44acdfd627'
+    const PROVATE_RPC = ''
     /* 公共 RPC链接公网 */
     const CHAIN_LIST_RPC = 'https://eth.llamarpc.com'
     const provider = new ethers.JsonRpcProvider(CHAIN_LIST_RPC)
